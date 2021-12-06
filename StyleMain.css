@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Architects Daughter', cursive;
+}
+
+nav{
+    display: flex;
+    padding: 2% 0%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+
+}
+.nav-links{
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 15px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 17px;
+    margin: auto;
+    transition: 0.2s;
+}
+.nav-links ul li a:hover{
+    font-size: 23px;
+}
+.nav-links ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: whitesmoke;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+.nav-links ul li a:hover::after{
+    width: 100%;
+    font-size: 25px;
+}
+
+.button-links{
+   position: absolute;
+    bottom: 5%;
+    left: 5%;
+    z-index: 1;
+}
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>media control</title>
+    <meta name="viewport" content="width =device-width,initial-scale=1.0">
+
+    <title>Lofi Hindi Music</title>
+
+    <link rel="stylesheet" href="StyleMain.css">
+   <style>
+    .transparent{
+     background-color: transparent;
+
+    }
+   </style>
+</head>
+<body>
+<div class="button-links">
+
+    <button type="button" onclick="Play()"><img src="Play.png" class="transparent"></button>
+    <button type="button" onclick="Pause()"><img src="Pause.png" class="transparent"></button>
+    <input type="range" min="0" max="100" value="100" class="Volume-Slider"  id="Vol_Input" >
+
+</div>
+<script src="Player.js"></script>
+
+</body>
+</html>
