@@ -1,10 +1,13 @@
-
-var audio = new Audio('Songs/testSong.mp3');
 var Volu=100;
 var IsMuted = false;
-function random(min,max){
-   return  Math.floor(Math.random()*(max-min+1)+min);
+var audio ;
+function SelectSong(SongNo) {
+    const SongArray = ['Songs/testSong.mp3','Songs/LofiHindi.m4a','Songs/SadHindi.m4a','Songs/SoftHindi.m4a','Songs/LofiEnglish.m4a','Songs/SadEnglish.m4a'];
+    console.log("Select Song function open");
+    audio = new Audio(SongArray[SongNo]);
+    console.log(SongNo);
 }
+
 function Play() {
     audio.play();
     console.log("Song started");
