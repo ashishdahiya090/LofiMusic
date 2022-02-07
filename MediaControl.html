@@ -8,6 +8,7 @@
     <title>Lofi Hindi Music</title>
 
     <link rel="stylesheet" href="StyleMain.css">
+
 </head>
 <body>
 <div class="button-links">
@@ -15,7 +16,7 @@
     <input type="image" src="Play.png" onclick="Play()"></input>
     <input type="image" src="Pause.png" onclick="Pause()"></input>
     <input type="image" src="Sound.png" onclick="Mute()" id="Mute"></input>
-    <input type="range" min="0" max="100" value="100" class="Volume-Slider"  id="Vol_Input" >
+    <input type="range" min="0" max="100" value="100" class="Volume-Slider"  id="Vol_Input" oninput="VolumeRange()">
 
 </div>
 <script src="Player.js"></script>
