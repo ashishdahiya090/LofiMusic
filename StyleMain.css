@@ -1,7 +1,9 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Architects Daughter', cursive;
+    font-family: 'VT323', monospace;
+    image-rendering: crisp-edges;
+
 }
 
 nav{
@@ -27,12 +29,12 @@ nav{
 .nav-links ul li a{
     color: whitesmoke;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 19px;
     margin: auto;
     transition: 0.2s;
 }
 .nav-links ul li a:hover{
-    font-size: 23px;
+    font-size: 19px;
 }
 .nav-links ul li a::after{
     content: '';
@@ -51,15 +53,16 @@ nav{
 .button-links{
    position: absolute;
     bottom: 5%;
-    left: 50%;
+    left: 40%;
 }
+
 
 .Volume-Slider{
 
     appearance: none;
-    height: 25px;
+    height: 10px;
     background: white;
-    outline: none;
+    outline: black;
     opacity: 1;
     -webkit-transition: .2s;
     transition: opacity .2s;
@@ -71,13 +74,13 @@ nav{
 
 .Volume-Slider::-webkit-slider-thumb {
     appearance: none;
-    width: 25px;
-    height: 25px;
+    width: 13px;
+    height: 13px;
     background: black;
 }
 
 .Volume-Slider::-moz-range-thumb{
-    width: 25px;
-    height: 25px;
+    width: 13px;
+    height: 13px;
     background: black;
 }

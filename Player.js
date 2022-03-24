@@ -1,6 +1,7 @@
 var Volu=100;
 var IsMuted = false;
 var audio ;
+var IsPaused = false
 function SelectSong(SongNo) {
     const SongArray = ['Songs/testSong.mp3','Songs/LofiHindi.m4a','Songs/SadHindi.m4a','Songs/SoftHindi.m4a','Songs/LofiEnglish.m4a','Songs/SadEnglish.m4a'];
     console.log("Select Song function open");
@@ -9,12 +10,23 @@ function SelectSong(SongNo) {
 }
 
 function Play() {
-    audio.play();
-    console.log("Song started");
+    if (!IsPaused)
+    {
+        audio.play();
+        console.log("Song started");
+        document.getElementById("PlayPaused").src="Pause.png";
+        IsPaused=true;
+    }
+    else{
+        audio.pause();
+        console.log("Song paused");
+        document.getElementById("PlayPaused").src="Play.png";
+        IsPaused=false;
+
+    }
 }
 function Pause(){
-    audio.pause();
-    console.log("Song paused");
+
 }
 function Mute(){
     if(!IsMuted){
@@ -36,9 +48,9 @@ function Mute(){
 }
 function VolumeRange(){
     var vol=document.getElementById("Vol_Input").value;
-        console.log(vol);
-        Volu=vol;
-        Volume(vol/100);
+    console.log(vol);
+    Volu=vol;
+    Volume(vol/100);
 
 }
 function Volume(volume){
